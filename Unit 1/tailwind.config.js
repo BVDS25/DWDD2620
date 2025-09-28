@@ -1,1 +1,2 @@
-module.exports = {content: ['./index.html']};
+module.exports = {
+  content: ["./index.html"]};
