@@ -7,10 +7,10 @@
 
   <title>My Store | Checkout</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -63,7 +63,7 @@
   </header>
 
   <!-- Navigation -->
-  
+
   <nav class="lg:p-4 space-y-2 bg-brand-secondary border-b border-brand-primary">
     <ul class="flex flex-col justify-between text-sm font-medium sm:flex-row px-20 lg:h-5 sm:gap-6">
       <li
@@ -86,144 +86,163 @@
   </nav>
 
   <!-- Main -->
-  <main class="bg-[radial-gradient(circle_at_center,_#FFFFFF,_#E1F7E0)] py-2 lg:py-8 pl-2 pr-2">
+  <main class="bg-[radial-gradient(circle_at_center,_#FFFFFF,_#E1F7E0)] p-5 min-h-screen">
 
-    <section class="  lg:max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-2xl ">
-    <h1 class="text-2xl font-bold mb-6">Checkout</h1>
+    <section class=" lg:max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-2xl ">
+      <h1 class="text-2xl text-brand-primary font-bold mb-6">Checkout</h1>
 
-    <!-- Delivery Section -->
-    <section class="space-y-4">
-      <input type="text" placeholder="First Name"
-        class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
-      <input type="text" placeholder="Last Name"
-        class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
-      <input type="text" placeholder="Address"
-        class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
-      <input type="text" placeholder="City"
-        class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
+      <!-- Delivery Section -->
+      <section class="space-y-4">
+        <input type="text" placeholder="First Name"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
+        <input type="text" placeholder="Last Name"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
+        <input type="text" placeholder="Address"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
+        <input type="text" placeholder="City"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
 
-      <!-- State Dropdown -->
-      <select class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition">
-        <option value="">Select State</option>
-        <option>Alabama</option>
-        <option>Alaska</option>
-        <option>Arizona</option>
-        <option>Arkansas</option>
-        <option>California</option>
-        <option>Colorado</option>
-        <option>Connecticut</option>
-        <option>Delaware</option>
-        <option>Florida</option>
-        <option>Georgia</option>
-        <option>Hawaii</option>
-        <option>Idaho</option>
-        <option>Illinois</option>
-        <option>Indiana</option>
-        <option>Iowa</option>
-        <option>Kansas</option>
-        <option>Kentucky</option>
-        <option>Louisiana</option>
-        <option>Maine</option>
-        <option>Maryland</option>
-        <option>Massachusetts</option>
-        <option>Michigan</option>
-        <option>Minnesota</option>
-        <option>Mississippi</option>
-        <option>Missouri</option>
-        <option>Montana</option>
-        <option>Nebraska</option>
-        <option>Nevada</option>
-        <option>New Hampshire</option>
-        <option>New Jersey</option>
-        <option>New Mexico</option>
-        <option>New York</option>
-        <option>North Carolina</option>
-        <option>North Dakota</option>
-        <option>Ohio</option>
-        <option>Oklahoma</option>
-        <option>Oregon</option>
-        <option>Pennsylvania</option>
-        <option>Rhode Island</option>
-        <option>South Carolina</option>
-        <option>South Dakota</option>
-        <option>Tennessee</option>
-        <option>Texas</option>
-        <option>Utah</option>
-        <option>Vermont</option>
-        <option>Virginia</option>
-        <option>Washington</option>
-        <option>West Virginia</option>
-        <option>Wisconsin</option>
-        <option>Wyoming</option>
-      </select>
+        <!-- State Dropdown -->
+        <select class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition">
+          <option value="">Select State</option>
+          <option>Alabama</option>
+          <option>Alaska</option>
+          <option>Arizona</option>
+          <option>Arkansas</option>
+          <option>California</option>
+          <option>Colorado</option>
+          <option>Connecticut</option>
+          <option>Delaware</option>
+          <option>Florida</option>
+          <option>Georgia</option>
+          <option>Hawaii</option>
+          <option>Idaho</option>
+          <option>Illinois</option>
+          <option>Indiana</option>
+          <option>Iowa</option>
+          <option>Kansas</option>
+          <option>Kentucky</option>
+          <option>Louisiana</option>
+          <option>Maine</option>
+          <option>Maryland</option>
+          <option>Massachusetts</option>
+          <option>Michigan</option>
+          <option>Minnesota</option>
+          <option>Mississippi</option>
+          <option>Missouri</option>
+          <option>Montana</option>
+          <option>Nebraska</option>
+          <option>Nevada</option>
+          <option>New Hampshire</option>
+          <option>New Jersey</option>
+          <option>New Mexico</option>
+          <option>New York</option>
+          <option>North Carolina</option>
+          <option>North Dakota</option>
+          <option>Ohio</option>
+          <option>Oklahoma</option>
+          <option>Oregon</option>
+          <option>Pennsylvania</option>
+          <option>Rhode Island</option>
+          <option>South Carolina</option>
+          <option>South Dakota</option>
+          <option>Tennessee</option>
+          <option>Texas</option>
+          <option>Utah</option>
+          <option>Vermont</option>
+          <option>Virginia</option>
+          <option>Washington</option>
+          <option>West Virginia</option>
+          <option>Wisconsin</option>
+          <option>Wyoming</option>
+        </select>
 
-      <input type="number" placeholder="Zip Code"
-        class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
-      <input type="tel" placeholder="Phone Number"
-        class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
-    </section>
+        <input type="number" placeholder="Zip Code"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
+        <input type="tel" placeholder="Phone Number"
+          class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-brand-primary transition" />
+      </section>
 
-    <!-- Shipping Options -->
-    <section class="mt-6">
-      <h2 class="font-semibold mb-2">Shipping Options</h2>
-      <div class="space-y-2">
-        <label class="flex items-center space-x-2">
-          <input type="radio" name="shipping" class="text-brand-primary focus:ring-brand-primary" />
-          <span>Standard (5–7 days)</span>
-        </label>
-        <label class="flex items-center space-x-2">
-          <input type="radio" name="shipping" class="text-brand-primary focus:ring-brand-primary" />
-          <span>Express (2–3 days)</span>
-        </label>
-        <label class="flex items-center space-x-2">
-          <input type="radio" name="shipping" class="text-brand-primary focus:ring-brand-primary" />
-          <span>Overnight</span>
-        </label>
-      </div>
-    </section>
+      <!-- Shipping Options -->
+      <section class="mt-6">
+        <h2 class="font-semibold mb-2 ">Shipping Options</h2>
+        <div class="space-y-2">
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="shipping" class="text-brand-primary focus:ring-brand-primary" />
+            <span>Standard (5–7 days)</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="shipping" class="text-brand-primary focus:ring-brand-primary" />
+            <span>Express (2–3 days)</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="shipping" class="text-brand-primary focus:ring-brand-primary" />
+            <span>Overnight</span>
+          </label>
+        </div>
+      </section>
 
-    <!-- Payment Options -->
-    <section class="mt-6">
-      <h2 class="font-semibold mb-2">Payment Method</h2>
-      <div class="space-y-2">
-        <label class="flex items-center space-x-2">
-          <input type="radio" name="payment" class="text-brand-primary focus:ring-brand-primary" />
-          <span>Credit Card</span>
-        </label>
-        <label class="flex items-center space-x-2">
-          <input type="radio" name="payment" class="text-brand-primary focus:ring-brand-primary" />
-          <span>Pay with Apple Cash</span>
-        </label>
-        <label class="flex items-center space-x-2">
-          <input type="radio" name="payment" class="text-brand-primary focus:ring-brand-primary" />
-          <span>Pay with Google Pay</span>
-        </label>
-      </div>
-    </section>
+      <!-- Payment Options -->
+      <section class="mt-6">
+        <h2 class="font-semibold mb-2">Payment Method</h2>
 
-    <button
-                class="flex items-center justify-center gap-2 bg-white border border-gray-300 rounded-full px-6 py-3 hover:bg-gray-100 transition w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
-                </svg>
-                <span class="text-gray-800 font-medium">Pay with Google Pay</span>
-              </button>
+      </section>
 
-    <!-- Order Button -->
-    <div class="mt-6">
       <button
-        class="w-full bg-brand-primary text-white py-3 rounded-xl hover:bg-blue-600 transition transform hover:scale-105">
+        class="mt-4 bg-blue-600 text-white rounded-full px-6 py-3 hover:opacity-90 transition w-full flex items-center justify-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-credit-card"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+          <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+        </svg>
+        <span>Pay with Card</span>
+      </button>
+
+      <button
+        class=" mt-2 flex items-center justify-center gap-2 bg-black text-white rounded-full px-6 py-3 hover:opacity-70 transition w-full">
+        <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
+          <path
+            d="M318.7 268.7c-3.4-25.3 7.4-52.1 27.6-67.8-10.9-15.9-27.8-27.3-45.8-30.7-19.1-3.5-38.6 5.2-51.4 5.2s-33.9-5.1-52.7-5c-27 0-52.1 15.8-66.1 40.4-28.3 49-7.2 121.1 20.1 160.6 13.3 19.2 29 40.8 49.8 39.9 19.7-.8 27.2-12.7 51.2-12.7 23.9 0 30.5 12.7 51.4 12.3 21.4-.3 34.9-19.4 47.9-38.7 15.1-22.1 21.3-43.4 21.5-44.6-.5-.2-41.3-15.8-43.5-62.9zM259.3 121.5c11-13.4 18.6-32.1 16.5-50.7-16 0-35.4 10.6-46.9 24-10.3 11.9-19.3 31-16.9 49.2 17.8 1.4 36.3-9 47.3-22.5z" />
+        </svg>
+        Pay with Apple Pay
+      </button>
+
+
+      <button
+        class=" mt-2 flex items-center justify-center gap-2 bg-white border border-gray-300 rounded-full px-6 py-3 hover:bg-gray-100 transition w-full">
+
+        <svg width="18px" height="18px" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.75,16A7.7446,7.7446,0,0,1,8.7177,18.6259L4.2849,22.1721A13.244,13.244,0,0,0,29.25,16"
+            fill="#00ac47" />
+          <path d="M23.75,16a7.7387,7.7387,0,0,1-3.2516,6.2987l4.3824,3.5059A13.2042,13.2042,0,0,0,29.25,16"
+            fill="#4285f4" />
+          <path
+            d="M8.25,16a7.698,7.698,0,0,1,.4677-2.6259L4.2849,9.8279a13.177,13.177,0,0,0,0,12.3442l4.4328-3.5462A7.698,7.698,0,0,1,8.25,16Z"
+            fill="#ffba00" />
+          <polygon fill="#2ab2db" points="8.718 13.374 8.718 13.374 8.718 13.374 8.718 13.374" />
+          <path
+            d="M16,8.25a7.699,7.699,0,0,1,4.558,1.4958l4.06-3.7893A13.2152,13.2152,0,0,0,4.2849,9.8279l4.4328,3.5462A7.756,7.756,0,0,1,16,8.25Z"
+            fill="#ea4435" />
+          <polygon fill="#2ab2db" points="8.718 18.626 8.718 18.626 8.718 18.626 8.718 18.626" />
+          <path d="M29.25,15v1L27,19.5H16.5V14H28.25A1,1,0,0,1,29.25,15Z" fill="#4285f4" />
+        </svg>
+        <span class="text-gray-800 font-medium">Pay with Google Pay</span>
+      </button>
+
+      <button class=" mt-2 bg-brand-primary text-white rounded-full px-6 py-3 hover:opacity-90 transition w-full">
         Place Order
       </button>
-    </div>
+
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-brand-primary text-white text-center p-4">
-    &copy; 2025 Bianca Delgado · DWDD 2620
+  <footer class="bg-brand-secondary border-t border-brand-primary text-white text-center py-2">
+    <p class="text-xs text-black">
+      &copy; 2025 Bianca Delgado — DWDD 2620
+    </p>
   </footer>
 
 </body>
