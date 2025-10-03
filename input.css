@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@config "tailwind.config.js";
+
 @layer components {
   .card {
-    @apply bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden border border-brand-primary;
+    @apply bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden;
   }
 
   .card img {

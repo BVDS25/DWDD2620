@@ -15,7 +15,7 @@
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
- 
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
@@ -71,60 +71,73 @@
     </ul>
   </nav>
 
-   <!-- MAIN -->
-    <main class="container mx-auto p-6">
-      <!-- HERO -->
-      <section class="relative">
-        <picture>
-          <!-- Mobile image -->
-          <source srcset="images/hero-mobile.jpg" media="(max-width: 640px)" />
-          <!-- Tablet image -->
-          <source srcset="images/hero-tablet.jpg" media="(max-width: 1024px)" />
-          <!-- Desktop image -->
-          <img src="images/hero-desktop.jpg" alt="Hero" class="w-full h-auto rounded-lg shadow" />
-        </picture>
-        <a href="#shop"
-           class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-brand-primary text-white px-6 py-3 rounded-full shadow hover:opacity-90 transition">
-          Shop Now
-        </a>
-      </section>
+  <!-- MAIN -->
+  <main class="container mx-auto p-6">
 
-      <!-- CARDS -->
-      <section id="shop" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-10">
-        <!-- Card 1 -->
-        <div class="card">
-          <img src="images/product-1.png" alt="Product 1" class="w-full h-40 object-cover" />
-          <div class="p-4">
-            <p class="mb-3">This is product 1 description.</p>
-            <a href="#" class="btn">Learn More</a>
-          </div>
+    <section class="relative">
+      <picture>
+
+        <source srcset="images/hero1x.png" media="(max-width: 640px)" />
+
+        <source srcset="images/hero2x.png" media="(max-width: 1024px)" />
+
+        <img src="images/hero3x.png" alt="Hero" class="w-full h-auto rounded-lg shadow" />
+      </picture>
+      <a href="/unit-1/index.html"
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-brand-primary text-white px-6 py-3 rounded-full shadow hover:opacity-90 transition">
+        Shop Now
+      </a>
+    </section>
+
+    <!-- CARDS -->
+    <section id="shop" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-10">
+      <!-- Card 1 -->
+      <div class="card">
+        <a href="../unit-1/index.html"><img src="images/product-1.png" alt="Product 1"
+            class="w-full h-40 object-cover" /></a>
+        <div class="p-4">
+          <a href="../unit-1/index.html">
+            <p class="mb-3">The Essentials Bundle</p>
+          </a>
+          <a href="#" class="btn">Add to bag</a>
         </div>
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="images/product-2.png" alt="Product 2" class="rounded-t-lg w-full h-40 object-cover" />
-          <div class="p-4">
-            <p class="mb-3">This is product 2 description.</p>
-            <a href="#" class="btn">Learn More</a>
-          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <a href="../unit-1/index.html"><img src="images/product-2.png" alt="Product 2"
+            class="w-full h-40 object-cover" /></a>
+        <div class="p-4">
+          <a href="../unit-1/index.html">
+            <p class="mb-3">Dreamlit Illuminating</p>
+          </a>
+          <a href="#" class="btn">Add to bag</a>
         </div>
-        <!-- Card 3 -->
-        <div class="card">
-          <img src="images/product-3.png" alt="Product 3" class="rounded-t-lg w-full h-40 object-cover" />
-          <div class="p-4">
-            <p class="mb-3">This is product 3 description.</p>
-            <a href="#" class="btn">Learn More</a>
-          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <a href="../unit-1/index.html"><img src="images/product-3.png" alt="Product 3"
+            class="w-full h-40 object-cover" /></a>
+        <div class="p-4">
+          <a href="../unit-1/index.html">
+            <p class="mb-3">Stress Rehab</p>
+          </a>
+          <a href="#" class="btn">Add to bag</a>
         </div>
-        <!-- Card 4 -->
-        <div class="card">
-          <img src="images/product-4.png" alt="Product 4" class="rounded-t-lg w-full h-40 object-cover" />
-          <div class="p-4">
-            <p class="mb-3">This is product 4 description.</p>
-            <a href="#" class="btn">Learn More</a>
-          </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <a href="../unit-1/index.html"><img src="images/product-4.png" alt="Product 3"
+            class="w-full h-40 object-cover" /></a>
+        <div class="p-4">
+          <a href="../unit-1/index.html">
+            <p class="mb-3">Comfort Space</p>
+          </a>
+          <a href="#" class="btn">Add to bag</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-brand-secondary border-t border-brand-primary text-white text-center py-2">
