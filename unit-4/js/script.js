@@ -1,6 +1,7 @@
 async function loadDestinations() {
   try {
     console.log('Fetching destinations...');
+    // Fetch from the root level destinations.json
     const res = await fetch('/destinations.json');
     
     if (!res.ok) {
