@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Component Styles */
+@layer components {
+  /* Button Base Styles */
+  .btn {
+    @apply flex-1 py-2.5 px-4 rounded-lg font-semibold transition-all duration-200 text-center cursor-pointer border-none;
+  }
+
+  /* Primary Button (Book Now) */
+  .btn-primary {
+    @apply text-white shadow-md;
+    background-color: #25977D;
+  }
+  
+  .btn-primary:hover {
+    @apply shadow-lg -translate-y-0.5;
+    background-color: #07392C;
+  }
+
+  /* Secondary Button (Itinerary) */
+  .btn-secondary {
+    @apply bg-red-500 text-white shadow-md flex-1 py-2.5 px-4 rounded-lg font-semibold transition-all duration-200 text-center cursor-pointer;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-red-700 shadow-lg -translate-y-0.5;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-red-400 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .card-image {
+    @apply w-full h-64 object-cover;
+  }
+  
+  .card-content {
+    @apply p-6;
+  }
+  
+  .card-title {
+    @apply text-xl font-bold text-gray-800 mb-2;
+  }
+  
+  .card-description {
+    @apply text-gray-600 mb-4 leading-relaxed;
+  }
+  
+  .card-buttons {
+    @apply flex gap-3 mt-4;
+  }
+}
