@@ -5,15 +5,16 @@ export default {
     "./index.html",
     "./src/**/*.{html,js,jsx,ts,tsx}",
     "./public/**/*.{html,js}",
-    "./css/**/*.{css}",
+    "./css/**/*.css",
+    "./js/**/*.js",
   ],
   theme: {
     extend: {
       colors: {
         'theme-bg': '#f9fafb',
         'theme-text': '#1f2937',
-        'theme-primary': '#2563eb',
-        'theme-accent': '#4f46e5',
+        'theme-primary': '#25977D',
+        'theme-accent': '#07392C',
       },
     },
   },

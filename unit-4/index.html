@@ -1,18 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vacation Destinations</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-theme-bg text-theme-text min-h-screen p-6">
-  <h1 class="text-4xl font-bold text-center mb-8 text-theme-primary">Top Vacation Destinations</h1>
-  <div id="destinations" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-    <!-- Cards will be injected here by JavaScript -->
-  </div>
+<body class="bg-theme-bg text-theme-text min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <!-- Logo and Brand -->
+        <div class="flex items-center gap-3">
+          <img src="public/logo.svg" alt="Travel World logo" class="h-10">
+          <div class="text-2xl font-bold text-theme-primary">TravelWorld</div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Destinations</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+          
+          <!-- Account Icon -->
+          <a href="#" class="text-gray-700 hover:text-theme-primary transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+          </a>
+          
+          <!-- Shopping Cart Icon -->
+          <a href="#" class="text-gray-700 hover:text-theme-primary transition relative">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-theme-primary focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <div class="flex flex-col space-y-3">
+          <a href="#" class="nav-link-mobile">Home</a>
+          <a href="#" class="nav-link-mobile">Destinations</a>
+          <a href="#" class="nav-link-mobile">About</a>
+          <a href="#" class="nav-link-mobile">Contact</a>
+          
+          <!-- Divider -->
+          <div class="border-t border-gray-200 my-2"></div>
+          
+          <!-- Mobile Icons -->
+          <a href="#" class="nav-link-mobile flex items-center gap-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+            <span>My Account</span>
+          </a>
+          
+          <a href="#" class="nav-link-mobile flex items-center gap-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+            <span>Shopping Cart</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow p-6">
+    <h1 class="text-4xl font-bold text-center mb-4 ">Top Vacation Destinations</h1>
+    <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+      Discover amazing places around the world. From tropical paradises to historic cities, find your perfect getaway.
+    </p>
+    <div id="destinations" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+      <!-- Cards will be injected here by JavaScript -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">TravelWorld</h3>
+          <p class="text-gray-400">Your gateway to unforgettable adventures around the globe.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Destinations</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>📧 info@travelworld.com</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>📍 123 Travel St, Adventure City</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+        <p>&copy; 2025 TravelWorld. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>

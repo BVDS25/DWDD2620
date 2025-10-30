@@ -3,8 +3,18 @@
 @tailwind utilities;
 
 @layer components {
+  /* Navigation Links */
+  .nav-link {
+    @apply text-gray-700 hover:text-theme-primary transition font-medium;
+  }
+
+  .nav-link-mobile {
+    @apply block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-theme-primary transition rounded-lg font-medium;
+  }
+
+  /* Card Styles */
   .card {
-    @apply bg-white rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl;
+    @apply bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
   }
 
   .card-img {
@@ -12,18 +22,48 @@
   }
 
   .card-body {
-    @apply p-4 flex flex-col justify-between;
+    @apply p-6 flex flex-col;
   }
 
   .card-title {
-    @apply text-xl font-semibold mb-2 text-theme-accent;
+    @apply text-xl font-bold mb-2 text-theme-primary;
   }
 
   .card-desc {
-    @apply text-gray-600 text-sm mb-4;
+    @apply text-gray-600 text-sm mb-4 leading-relaxed flex-grow;
   }
 
   .card-cost {
-    @apply text-lg font-bold text-theme-primary;
+    @apply text-2xl font-bold text-theme-primary;
+  }
+
+  /* Button Container */
+  .card-buttons {
+    @apply flex gap-3 mt-4;
+  }
+
+  /* Button Base Styles */
+  .btn {
+    @apply flex-1 py-2.5 px-4 rounded-lg font-semibold transition-all duration-200 text-center cursor-pointer border-none;
+  }
+
+  /* Primary Button (Book Now) */
+  .btn-primary {
+    @apply text-white shadow-md;
+    background-color: #25977D;
+  }
+  
+  .btn-primary:hover {
+    @apply shadow-lg -translate-y-0.5;
+    background-color: #07392C;
+  }
+
+  /* Secondary Button (Itinerary) */
+  .btn-secondary {
+    @apply bg-white border-2 border-theme-primary shadow-md;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-theme-accent text-white shadow-lg -translate-y-0.5;
   }
 }
