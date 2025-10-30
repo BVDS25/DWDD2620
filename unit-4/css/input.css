@@ -22,11 +22,11 @@
 
   /* Secondary Button (Itinerary) */
   .btn-secondary {
-    @apply bg-blue-500 text-white shadow-md flex-1 py-2.5 px-4 rounded-lg font-semibold transition-all duration-200 text-center cursor-pointer border-2 border-red-600;
+    @apply text-theme-primary shadow-md flex-1 py-2.5 px-4 rounded-lg font-semibold transition-all duration-200 text-center cursor-pointe;
   }
   
   .btn-secondary:hover {
-    @apply bg-red-700 shadow-lg -translate-y-0.5;
+    @apply bg-theme-accent shadow-lg -translate-y-0.5;
   }
 
   /* Card Styles */
