@@ -1,7 +1,7 @@
 {
-  "name": "dwdd2720",
+  "name": "dwdd2620",
   "version": "1.0.0",
-  "description": "https://bvds25.github.io/DWDD2720/",
+  "description": "https://bvds25.github.io/DWDD2620/",
   "main": "index.js",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./input.css -o ./styles.css --watch",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BVDS25/DWDD2720.git"
+    "url": "git+https://github.com/BVDS25/DWDD2620.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BVDS25/DWDD2720/issues"
+    "url": "https://github.com/BVDS25/DWDD2620/issues"
   },
-  "homepage": "https://github.com/BVDS25/DWDD2720#readme",
+  "homepage": "https://github.com/BVDS25/DWDD2620#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
