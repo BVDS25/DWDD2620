@@ -1,36 +1,34 @@
 async function loadDestinations() {
   try {
     console.log('Fetching destinations...');
-    // Try multiple paths to find destinations.json
-    const paths = [
-      './json/destinations.json',     // Local relative path
-      './destinations.json',          // If in same folder
-      '/destinations.json',           // Root path (for Vite dev)
-      'json/destinations.json'        // Another relative option
-    ];
     
-    let destinations = null;
-    let lastError = null;
+    // Determine the correct path based on environment
+    let jsonPath;
     
-    for (const path of paths) {
-      try {
-        console.log(`Trying path: ${path}`);
-        const res = await fetch(path);
-        if (res.ok) {
-          destinations = await res.json();
-          console.log(`Successfully loaded from: ${path}`);
-          break;
-        }
-      } catch (error) {
-        lastError = error;
-        console.log(`Failed to load from ${path}:`, error.message);
-      }
+    // Check if we're on GitHub Pages (has github.io in URL)
+    if (window.location.hostname.includes('github.io')) {
+      // GitHub Pages deployment - use relative path from unit-4 folder
+      jsonPath = 'json/destinations.json';
+      console.log('Detected GitHub Pages deployment');
+    } else if (window.location.port) {
+      // Local development server (has port number)
+      jsonPath = '/destinations.json';
+      console.log('Detected local development server');
+    } else {
+      // Other deployment - try relative path
+      jsonPath = './json/destinations.json';
+      console.log('Using relative path for other deployment');
     }
     
-    if (!destinations) {
-      throw new Error(`Could not load destinations.json from any path. Last error: ${lastError?.message}`);
+    console.log(`Fetching from: ${jsonPath}`);
+    const response = await fetch(jsonPath);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status} - Could not load ${jsonPath}`);
     }
     
+    const destinations = await response.json();
+    console.log(`Successfully loaded from: ${jsonPath}`);
     console.log('Destinations loaded:', destinations);
 
     const container = document.getElementById('destinations');
