@@ -1,14 +1,36 @@
 async function loadDestinations() {
   try {
     console.log('Fetching destinations...');
-    // Fetch from the root level destinations.json
-    const res = await fetch('/destinations.json');
+    // Try multiple paths to find destinations.json
+    const paths = [
+      './json/destinations.json',     // Local relative path
+      './destinations.json',          // If in same folder
+      '/destinations.json',           // Root path (for Vite dev)
+      'json/destinations.json'        // Another relative option
+    ];
     
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`);
+    let destinations = null;
+    let lastError = null;
+    
+    for (const path of paths) {
+      try {
+        console.log(`Trying path: ${path}`);
+        const res = await fetch(path);
+        if (res.ok) {
+          destinations = await res.json();
+          console.log(`Successfully loaded from: ${path}`);
+          break;
+        }
+      } catch (error) {
+        lastError = error;
+        console.log(`Failed to load from ${path}:`, error.message);
+      }
     }
     
-    const destinations = await res.json();
+    if (!destinations) {
+      throw new Error(`Could not load destinations.json from any path. Last error: ${lastError?.message}`);
+    }
+    
     console.log('Destinations loaded:', destinations);
 
     const container = document.getElementById('destinations');
