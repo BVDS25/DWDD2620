@@ -1,0 +1,12 @@
+{
+  "name": "unit-5-skincare",
+  "version": "1.0.0",
+  "description": "Glow Skincare website with Tailwind CSS",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.7"
+  }
+}
