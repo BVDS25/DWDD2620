@@ -37,7 +37,7 @@ export function createHeader() {
     profileButton.setAttribute('aria-label', 'User Profile');
     
     const profileIcon = document.createElement('img');
-    profileIcon.src = 'images/person.svg';
+    profileIcon.src = './images/person.svg';
     profileIcon.alt = 'User Profile';
     profileIcon.className = 'w-6 h-6';
     profileButton.appendChild(profileIcon);
@@ -48,7 +48,7 @@ export function createHeader() {
     cartButton.setAttribute('aria-label', 'Shopping Cart');
     
     const cartIcon = document.createElement('img');
-    cartIcon.src = 'images/cart.svg';
+    cartIcon.src = './images/cart.svg';
     cartIcon.alt = 'Shopping Cart';
     cartIcon.className = 'w-6 h-6';
     
