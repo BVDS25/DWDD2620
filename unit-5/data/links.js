@@ -35,7 +35,10 @@ export const links = [
 export const navigationConfig = {
     // CSS classes for navigation styling
     containerClass: 'container mx-auto px-4 py-2',
-    listClass: 'flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 justify-center items-center',
+    listClass: ' flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 justify-center items-center',
+    
+    // List item styling
+    listItemClass: 'p-2 rounded-lg',
     
     // Active state styling
     activeClass: 'block px-4 py-2 rounded-lg bg-skin-accent text-white font-semibold transition-all duration-200 transform',

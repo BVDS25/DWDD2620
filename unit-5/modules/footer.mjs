@@ -36,7 +36,7 @@ export function createFooter() {
     // Student name
     const studentName = document.createElement('p');
     studentName.className = 'text-sm font-medium text-white';
-    studentName.textContent = 'Bianca Villarreal';
+    studentName.textContent = 'Bianca Delgado';
     
     // Class name
     const className = document.createElement('p');

@@ -22,6 +22,7 @@ export function createNavigation() {
     // Create navigation items from data
     links.forEach(item => {
         const listItem = document.createElement('li');
+        listItem.className = navigationConfig.listItemClass;
         
         const link = document.createElement('a');
         link.href = item.href;

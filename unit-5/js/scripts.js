@@ -100,13 +100,6 @@ class GlowSkincareApp {
 
     // Add accessibility improvements
     addAccessibilityFeatures() {
-        // Add skip navigation link
-        const skipLink = document.createElement('a');
-        skipLink.href = '#main';
-        skipLink.textContent = 'Skip to main content';
-        skipLink.className = 'sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-skin-accent text-white p-2 z-50';
-        document.body.insertBefore(skipLink, document.body.firstChild);
-
         // Add main landmark if not present
         const main = document.querySelector('main');
         if (main && !main.id) {
