@@ -16,6 +16,9 @@ export function createNavigation() {
     const navList = document.createElement('ul');
     navList.className = navigationConfig.listClass;
     
+    // Debug: Log the classes being applied
+    console.log('Navigation classes applied:', navigationConfig.listClass);
+    
     // Create navigation items from data
     links.forEach(item => {
         const listItem = document.createElement('li');
@@ -51,51 +54,5 @@ export function createNavigation() {
     container.appendChild(navList);
     navElement.appendChild(container);
     
-    // Add mobile menu toggle for small screens (if needed)
-    addMobileMenuToggle(navElement, navList);
-    
     console.log(`✅ Navigation generated successfully - Current page: ${currentPage}`);
-}
-
-function addMobileMenuToggle(navElement, navList) {
-    // Create mobile menu button using config
-    const mobileToggle = document.createElement('button');
-    mobileToggle.className = navigationConfig.mobileToggleClass;
-    mobileToggle.textContent = 'Menu';
-    mobileToggle.setAttribute('aria-label', 'Toggle navigation menu');
-    
-    let isMenuOpen = false;
-    
-    mobileToggle.addEventListener('click', () => {
-        isMenuOpen = !isMenuOpen;
-        if (isMenuOpen) {
-            navList.classList.remove('hidden');
-            mobileToggle.textContent = 'Close Menu';
-        } else {
-            navList.classList.add('hidden');
-            mobileToggle.textContent = 'Menu';
-        }
-    });
-    
-    // Insert toggle before nav list
-    navElement.querySelector('.container').insertBefore(mobileToggle, navList);
-    
-    // Show/hide based on screen size
-    const handleResize = () => {
-        if (window.innerWidth >= 768) { // md breakpoint
-            navList.classList.remove('hidden');
-            mobileToggle.style.display = 'none';
-        } else {
-            mobileToggle.style.display = 'block';
-            if (!isMenuOpen) {
-                navList.classList.add('hidden');
-            }
-        }
-    };
-    
-    // Initial check
-    handleResize();
-    
-    // Listen for resize
-    window.addEventListener('resize', handleResize);
 }

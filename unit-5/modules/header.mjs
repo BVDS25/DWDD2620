@@ -17,11 +17,7 @@ export function createHeader() {
     
     // Logo icon (skincare droplet)
     const logoIcon = document.createElement('div');
-    logoIcon.innerHTML = `
-        <svg class="w-8 h-8 text-skin-accent" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C8 6 8 10 8 14C8 18.4 9.6 20 12 20S16 18.4 16 14C16 10 16 6 12 2Z"/>
-        </svg>
-    `;
+    logoIcon.innerHTML = `<img src="images/logo.svg" alt="Glow Skincare Logo" class="w-8 h-8 text-skin-accent"/>`;
     
     // Logo text
     const logoText = document.createElement('h2');
