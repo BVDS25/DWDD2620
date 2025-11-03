@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Fira+Code:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme configuration */
+@theme {
+  --font-handwrite: "The Girl Next Door", cursive;
+  
+  --color-primary: #3B82F6;
+  --color-secondary: #10B981;
+  --color-accent: #F59E0B;
+  --color-custom: #8B5CF6;
+  
+  --breakpoint-sm: 32rem;
+}
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h2 {
+    color: var(--color-custom);
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .section-padding {
+    @apply py-12 px-4;
+  }
+  
+  .color-block {
+    @apply w-20 h-20 rounded-lg shadow-md;
+  }
+  
+  .text-custom {
+    color: var(--color-custom);
+  }
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
