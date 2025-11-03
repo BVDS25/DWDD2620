@@ -10,6 +10,49 @@
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Fallback CSS for deployment -->
+    <link rel="stylesheet" href="css/fallback.css">
+    
+    <!-- Critical inline styles for GitHub Pages -->
+    <style>
+        :root {
+            --skin-primary: #f7e7ce;
+            --skin-secondary: #e8d5b7;
+            --skin-accent: #b5a082;
+            --skin-dark: #8b7355;
+        }
+        body { 
+            background-color: var(--skin-primary); 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            font-family: system-ui, sans-serif;
+        }
+        header { 
+            background: white; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            position: sticky; 
+            top: 0; 
+            z-index: 50; 
+        }
+        nav { 
+            background-color: var(--skin-secondary); 
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
+        }
+        footer { 
+            background-color: var(--skin-dark); 
+            color: white; 
+            margin-top: auto; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 1rem; 
+        }
+        .w-full { width: 100%; }
+        .h-auto { height: auto; }
+        img { object-fit: cover; }
+    </style>
 </head>
 <body class="bg-skin-primary min-h-screen flex flex-col">
     <!-- Header - Dynamically Generated -->
