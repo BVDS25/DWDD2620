@@ -83,7 +83,7 @@ export function createFooter() {
     tagline.className = 'text-center mt-4';
     const taglineText = document.createElement('p');
     taglineText.className = 'text-xs text-gray-400 italic';
-    taglineText.textContent = 'Nurturing your skin, naturally.';
+    taglineText.innerHTML = `&copy; Bianca Delgado &copy; ${currentYear} &bull; DWDD2620`;
     tagline.appendChild(taglineText);
     container.appendChild(tagline);
     

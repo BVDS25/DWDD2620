@@ -1,53 +1,47 @@
 // navigation.mjs - Dynamic navigation with wayfinding
 
+import { links, navigationConfig, getCurrentPage, isActiveLink } from '../data/links.js';
+
 export function createNavigation() {
     const navElement = document.getElementById('navigation');
     
-    // Navigation items
-    const navItems = [
-        { name: 'Home', href: 'index.html', page: 'index.html' },
-        { name: 'Products', href: 'products.html', page: 'products.html' },
-        { name: 'Cart', href: 'cart.html', page: 'cart.html' },
-        { name: 'Profile', href: 'profile.html', page: 'profile.html' }
-    ];
-    
-    // Get current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    // Get current page for wayfinding
+    const currentPage = getCurrentPage();
     
     // Create container
     const container = document.createElement('div');
-    container.className = 'container mx-auto px-4 py-2';
+    container.className = navigationConfig.containerClass;
     
     // Create navigation list
     const navList = document.createElement('ul');
-    navList.className = 'flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 justify-center items-center';
+    navList.className = navigationConfig.listClass;
     
-    // Create navigation items
-    navItems.forEach(item => {
+    // Create navigation items from data
+    links.forEach(item => {
         const listItem = document.createElement('li');
         
         const link = document.createElement('a');
         link.href = item.href;
         link.textContent = item.name;
+        link.setAttribute('title', item.description);
         
-        // Determine if this is the current page
-        const isActive = currentPage === item.page || 
-                        (currentPage === '' && item.page === 'index.html');
+        // Determine if this is the current page using helper function
+        const isActive = isActiveLink(item.page);
         
-        // Apply styles based on active state
+        // Apply styles based on active state using config
         if (isActive) {
-            link.className = 'block px-4 py-2 rounded-lg bg-skin-accent text-white font-semibold transition-all duration-200 transform';
+            link.className = navigationConfig.activeClass;
         } else {
-            link.className = 'block px-4 py-2 rounded-lg text-skin-dark hover:bg-skin-accent hover:text-white font-medium transition-all duration-200 transform hover:scale-105';
+            link.className = navigationConfig.inactiveClass;
         }
         
         // Add click handler for smooth transitions
         link.addEventListener('click', (e) => {
-            // Add a subtle loading effect
-            link.style.transform = 'scale(0.95)';
+            // Add a subtle loading effect using config
+            link.style.transform = `scale(${navigationConfig.animations.clickScale})`;
             setTimeout(() => {
                 window.location.href = item.href;
-            }, 100);
+            }, navigationConfig.animations.clickDelay);
         });
         
         listItem.appendChild(link);
@@ -64,9 +58,9 @@ export function createNavigation() {
 }
 
 function addMobileMenuToggle(navElement, navList) {
-    // Create mobile menu button (hidden by default, shown on very small screens if needed)
+    // Create mobile menu button using config
     const mobileToggle = document.createElement('button');
-    mobileToggle.className = 'md:hidden bg-skin-accent text-white p-2 rounded-lg mb-2 w-full';
+    mobileToggle.className = navigationConfig.mobileToggleClass;
     mobileToggle.textContent = 'Menu';
     mobileToggle.setAttribute('aria-label', 'Toggle navigation menu');
     
