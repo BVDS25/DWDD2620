@@ -747,7 +747,7 @@ body {
 .bg-skin-accent {
   --tw-bg-opacity: 1;
   background-color: rgb(181 160 130 / var(--tw-bg-opacity, 1));
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 5px;
 }
 
