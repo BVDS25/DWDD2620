@@ -1,0 +1,19 @@
+{
+  "name": "2620-reviews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bianca",
+  "license": "ISC",
+  "description": "Customer Reviews Site with Tailwind CSS",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}

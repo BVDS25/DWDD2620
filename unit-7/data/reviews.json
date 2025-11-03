@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Mitchell",
+    "rating": 5,
+    "date": "2025-10-28",
+    "review": "Absolutely amazing product! The quality exceeded my expectations and the customer service was outstanding. I've already recommended this to all my friends.",
+    "product": "Premium Wireless Headphones"
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "rating": 4,
+    "date": "2025-10-25",
+    "review": "Really solid product with great build quality. The only minor issue is that the setup process could be a bit more intuitive, but once it's running, it's fantastic.",
+    "product": "Smart Home Speaker"
+  },
+  {
+    "id": 3,
+    "name": "Emma Rodriguez",
+    "rating": 5,
+    "date": "2025-10-22",
+    "review": "This has completely changed my daily routine! The design is sleek, the functionality is perfect, and it arrived exactly when promised. Couldn't be happier!",
+    "product": "Fitness Tracker"
+  },
+  {
+    "id": 4,
+    "name": "David Thompson",
+    "rating": 3,
+    "date": "2025-10-20",
+    "review": "Good product overall, but I was expecting a bit more for the price point. It does what it's supposed to do, just nothing extraordinary. Still satisfied with my purchase.",
+    "product": "Bluetooth Mouse"
+  },
+  {
+    "id": 5,
+    "name": "Lisa Wang",
+    "rating": 5,
+    "date": "2025-10-18",
+    "review": "Incredible value for money! The features are top-notch and the customer support team went above and beyond to help me with my questions. Highly recommend!",
+    "product": "Laptop Stand"
+  },
+  {
+    "id": 6,
+    "name": "James Wilson",
+    "rating": 4,
+    "date": "2025-10-15",
+    "review": "Very impressed with the quality and performance. The delivery was quick and the packaging was excellent. Minor complaint about the instructions being a bit unclear.",
+    "product": "Wireless Charger"
+  },
+  {
+    "id": 7,
+    "name": "Amanda Foster",
+    "rating": 5,
+    "date": "2025-10-12",
+    "review": "Perfect purchase! Everything arrived in perfect condition and works exactly as described. The attention to detail in the design is remarkable. Will definitely buy again.",
+    "product": "Desk Organizer"
+  },
+  {
+    "id": 8,
+    "name": "Ryan Murphy",
+    "rating": 2,
+    "date": "2025-10-10",
+    "review": "Unfortunately, this product didn't meet my expectations. While it works as advertised, the build quality feels cheaper than expected and it broke after just a few weeks of use.",
+    "product": "Phone Case"
+  },
+  {
+    "id": 9,
+    "name": "Sophia Garcia",
+    "rating": 4,
+    "date": "2025-10-08",
+    "review": "Really good product with excellent features. The interface is user-friendly and the performance is reliable. Only wish it came in more color options.",
+    "product": "Tablet Stylus"
+  },
+  {
+    "id": 10,
+    "name": "Kevin O'Brien",
+    "rating": 5,
+    "date": "2025-10-05",
+    "review": "Outstanding quality and exceptional service! This product has made such a difference in my work productivity. The company clearly cares about their customers. Five stars!",
+    "product": "Monitor Stand"
+  }
+]
