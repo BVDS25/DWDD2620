@@ -4,79 +4,79 @@
     "name": "Sarah Mitchell",
     "rating": 5,
     "date": "2025-10-28",
-    "review": "Absolutely amazing product! The quality exceeded my expectations and the customer service was outstanding. I've already recommended this to all my friends.",
-    "product": "Premium Wireless Headphones"
+    "review": "This vitamin C serum has transformed my skin! I noticed brighter, more even-toned skin within just two weeks. The texture is lightweight and absorbs quickly. My dark spots are fading beautifully!",
+    "product": "Brightening Vitamin C Serum"
   },
   {
     "id": 2,
     "name": "Michael Chen",
     "rating": 4,
     "date": "2025-10-25",
-    "review": "Really solid product with great build quality. The only minor issue is that the setup process could be a bit more intuitive, but once it's running, it's fantastic.",
-    "product": "Smart Home Speaker"
+    "review": "Great moisturizer that doesn't leave my skin feeling greasy. Perfect for my combination skin type. The only downside is the pump dispenser sometimes gets stuck, but the product itself is excellent.",
+    "product": "Daily Hydrating Moisturizer"
   },
   {
     "id": 3,
     "name": "Emma Rodriguez",
     "rating": 5,
     "date": "2025-10-22",
-    "review": "This has completely changed my daily routine! The design is sleek, the functionality is perfect, and it arrived exactly when promised. Couldn't be happier!",
-    "product": "Fitness Tracker"
+    "review": "This cleanser has completely changed my skincare routine! It removes all my makeup effortlessly while leaving my skin soft and hydrated. No more tight, dry feeling after cleansing!",
+    "product": "Gentle Foaming Cleanser"
   },
   {
     "id": 4,
     "name": "David Thompson",
     "rating": 3,
     "date": "2025-10-20",
-    "review": "Good product overall, but I was expecting a bit more for the price point. It does what it's supposed to do, just nothing extraordinary. Still satisfied with my purchase.",
-    "product": "Bluetooth Mouse"
+    "review": "Decent eye cream that does help with puffiness in the morning. I was hoping for more dramatic results with fine lines, but it's a solid everyday product. Good for the price point.",
+    "product": "Anti-Aging Eye Cream"
   },
   {
     "id": 5,
     "name": "Lisa Wang",
     "rating": 5,
     "date": "2025-10-18",
-    "review": "Incredible value for money! The features are top-notch and the customer support team went above and beyond to help me with my questions. Highly recommend!",
-    "product": "Laptop Stand"
+    "review": "Finally found a retinol that doesn't irritate my sensitive skin! Started slowly and now use it every other night. My skin texture has improved dramatically and my pores look smaller.",
+    "product": "Gentle Retinol Treatment"
   },
   {
     "id": 6,
     "name": "James Wilson",
     "rating": 4,
     "date": "2025-10-15",
-    "review": "Very impressed with the quality and performance. The delivery was quick and the packaging was excellent. Minor complaint about the instructions being a bit unclear.",
-    "product": "Wireless Charger"
+    "review": "Excellent sunscreen that doesn't leave a white cast on my darker skin tone. Absorbs well under makeup and provides great protection. Wish it came in a larger size option.",
+    "product": "Mineral SPF 50 Sunscreen"
   },
   {
     "id": 7,
     "name": "Amanda Foster",
     "rating": 5,
     "date": "2025-10-12",
-    "review": "Perfect purchase! Everything arrived in perfect condition and works exactly as described. The attention to detail in the design is remarkable. Will definitely buy again.",
-    "product": "Desk Organizer"
+    "review": "This face mask is pure luxury! My skin feels incredibly soft and looks radiant after each use. The natural ingredients smell amazing and it's become my weekly self-care ritual.",
+    "product": "Hydrating Honey Face Mask"
   },
   {
     "id": 8,
     "name": "Ryan Murphy",
     "rating": 2,
     "date": "2025-10-10",
-    "review": "Unfortunately, this product didn't meet my expectations. While it works as advertised, the build quality feels cheaper than expected and it broke after just a few weeks of use.",
-    "product": "Phone Case"
+    "review": "Unfortunately, this toner caused some irritation and breakouts for my skin. While it has great reviews, it just didn't work for my sensitive, acne-prone skin type. Had to discontinue use.",
+    "product": "Clarifying BHA Toner"
   },
   {
     "id": 9,
     "name": "Sophia Garcia",
     "rating": 4,
     "date": "2025-10-08",
-    "review": "Really good product with excellent features. The interface is user-friendly and the performance is reliable. Only wish it came in more color options.",
-    "product": "Tablet Stylus"
+    "review": "Really effective night serum that has helped with my acne scars. The texture is perfect and it layers well with other products. Only wish it came with a dropper for easier application.",
+    "product": "Niacinamide Repair Serum"
   },
   {
     "id": 10,
     "name": "Kevin O'Brien",
     "rating": 5,
     "date": "2025-10-05",
-    "review": "Outstanding quality and exceptional service! This product has made such a difference in my work productivity. The company clearly cares about their customers. Five stars!",
-    "product": "Monitor Stand"
+    "review": "Amazing exfoliant that has given me the smoothest skin I've ever had! Use it twice a week and my complexion looks brighter and more refined. The customer service team is also fantastic!",
+    "product": "AHA Gentle Exfoliating Peel"
   }
 ]
