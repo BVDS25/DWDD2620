@@ -77,16 +77,16 @@ function createStarRating(rating) {
     let starsHTML = '';
     
     for (let i = 1; i <= 5; i++) {
-        // Ternary operator to determine star color and fill
-        const starClass = i <= rating 
-            ? 'star star-filled text-primary' 
-            : 'star star-empty text-gray-300';
+        // Ternary operator to determine which SVG file to use
+        const starSrc = i <= rating 
+            ? 'images/starColor.svg' 
+            : 'images/starGrey.svg';
         
-        const starIcon = i <= rating 
-            ? '★' 
-            : '☆';
+        const starClass = i <= rating 
+            ? 'star star-filled' 
+            : 'star star-empty';
             
-        starsHTML += `<span class="${starClass}" data-rating="${i}">${starIcon}</span>`;
+        starsHTML += `<img src="${starSrc}" alt="${i <= rating ? 'Filled star' : 'Empty star'}" class="${starClass} w-4 h-4" data-rating="${i}">`;
     }
     
     return starsHTML;

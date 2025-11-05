@@ -104,14 +104,14 @@
 /* Custom star rating styles */
 @layer components {
   .star {
-    @apply inline-block text-2xl transition-colors duration-200;
+    @apply inline-block transition-opacity duration-200;
   }
   
   .star-filled {
-    @apply text-primary;
+    @apply opacity-100;
   }
   
   .star-empty {
-    @apply text-gray-300;
+    @apply opacity-100;
   }
 }
