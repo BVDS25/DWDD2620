@@ -1,6 +1,42 @@
+@theme {
+  /* Semantic color palette */
+  --color-primary: #FACC15;      /* Yellow - Stars, main brand color */
+  --color-secondary: #2563EB;    /* Blue - Navigation, links, CTAs */
+  --color-accent: #10B981;       /* Green - Success states, highlights */
+  
+  /* Neutral grays */
+  --color-gray-50: #f9fafb;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+  
+  /* Status colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  
+  /* Core colors */
+  --color-white: #ffffff;
+
+  /* breakpoints */
+  --screen-sm: 640px;
+  --screen-lg: 1024px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global heading styles */
+@layer base {
+  h1, h2, h3 {
+    color: var(--color-secondary);
+  }
+}
 
 /* Custom Lato font classes */
 @layer components {
@@ -72,10 +108,10 @@
   }
   
   .star-filled {
-    @apply text-star-gold;
+    @apply text-primary;
   }
   
   .star-empty {
-    @apply text-star-gray;
+    @apply text-gray-300;
   }
 }

@@ -59,7 +59,7 @@ function createReviewCard(review) {
         </div>
         
         <div class="mb-4">
-            <p class="text-sm font-medium text-accent mb-2">${review.product}</p>
+            <p class="text-sm font-medium text-secondary mb-2">${review.product}</p>
             <p class="text-gray-700 leading-relaxed">${review.review}</p>
         </div>
         
@@ -74,20 +74,22 @@ function createReviewCard(review) {
 
 // Function to create star rating with ternary operator for different colors
 function createStarRating(rating) {
-    // Build the Stars
-    const thestars = document.createElement('div');
-    thestars.className = "flex my-4";
+    let starsHTML = '';
     
-    for (let i = 0; i < 5; i++) {
-        // console.log(review.stars)
-        const starImage = document.createElement('img');
-        i < rating ? starImage.src = "images/starColor.svg" : starImage.src = "images/starGrey.svg";
-        starImage.className = "w-4 mr-1";
-        starImage.alt = i < rating ? "Filled star" : "Empty star";
-        thestars.appendChild(starImage);
+    for (let i = 1; i <= 5; i++) {
+        // Ternary operator to determine star color and fill
+        const starClass = i <= rating 
+            ? 'star star-filled text-primary' 
+            : 'star star-empty text-gray-300';
+        
+        const starIcon = i <= rating 
+            ? '★' 
+            : '☆';
+            
+        starsHTML += `<span class="${starClass}" data-rating="${i}">${starIcon}</span>`;
     }
     
-    return thestars.outerHTML;
+    return starsHTML;
 }
 
 // Function to implement navigation wayfinding
