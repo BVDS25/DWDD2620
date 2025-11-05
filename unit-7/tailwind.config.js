@@ -5,11 +5,19 @@ module.exports = {
     "./js/**/*.js"
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Lato', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+    },
     colors: {
       // Core colors
       white: '#ffffff',
       
-      // Gray scale (used throughout your project)
+      // Semantic color palette
+      primary: '#FACC15',      // Yellow - Stars, main brand color
+      secondary: '#2563EB',    // Blue - Navigation, links, CTAs
+      accent: '#10B981',       // Green - Success states, highlights
+      
+      // Neutral grays (keep current usage)
       gray: {
         50: '#f9fafb',
         200: '#e5e7eb',
@@ -20,27 +28,14 @@ module.exports = {
         900: '#111827'
       },
       
-      // Blue (used for navigation and links)
-      blue: {
-        50: '#eff6ff',
-        600: '#2563eb'
-      },
+      // Status colors
+      success: '#10B981',      // Green - Success messages
+      warning: '#F59E0B',      // Orange - Warning states  
+      error: '#EF4444',        // Red - Error messages
+      info: '#3B82F6',         // Light blue - Info messages
       
-      // Yellow (used for star ratings)
-      yellow: {
-        400: '#facc15'
-      },
-      
-      // Red (used for error messages)
-      red: {
-        50: '#fef2f2',
-        200: '#fecaca',
-        500: '#ef4444',
-        600: '#dc2626'
-      },
-      
-      // Custom star colors
-      'star-gold': '#FFD700',
+      // Legacy star colors (for backward compatibility)
+      'star-gold': '#FACC15',  // Same as primary
       'star-gray': '#D1D5DB'
     },
   },
