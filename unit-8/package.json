@@ -1,0 +1,24 @@
+{
+  "name": "unit-8-nolan-movies",
+  "version": "1.0.0",
+  "description": "Christopher Nolan Movies Card Display",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify"
+  },
+  "keywords": [
+    "tailwind",
+    "responsive",
+    "movies",
+    "christopher-nolan"
+  ],
+  "author": "Student Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21"
+  }
+}
