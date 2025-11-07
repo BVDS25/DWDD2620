@@ -4,41 +4,41 @@
     "length": "7 days",
     "description": "Experience serene beaches, lush rice terraces, and ancient temples in this tropical paradise.",
     "cost": "$1,450",
-    "image": "unit-4/images/bali.webp?v=2"
+    "image": "./images/bali.webp?v=2"
   },
   {
     "name": "Paris, France",
     "length": "5 days",
     "description": "Romantic city lights, world-class art museums, and exquisite cuisine await in the City of Love.",
     "cost": "$1,800",
-    "image": "unit-4/images/paris.webp?v=2"
+    "image": "./images/paris.webp?v=2"
   },
   {
     "name": "Kyoto, Japan",
     "length": "6 days",
     "description": "Discover the tranquility of traditional gardens, bamboo forests, and ancient shrines.",
     "cost": "$1,600",
-    "image": "unit-4/images/japan.webp?v=2"
+    "image": "./images/japan.webp?v=2"
   },
   {
     "name": "Santorini, Greece",
     "length": "5 days",
     "description": "Marvel at whitewashed houses and blue-domed churches overlooking the Aegean Sea.",
     "cost": "$1,700",
-    "image": "unit-4/images/greece.webp?v=2"
+    "image": "./images/greece.webp?v=2"
   },
   {
     "name": "Maui, Hawaii",
     "length": "7 days",
     "description": "Enjoy pristine beaches, volcanic landscapes, and the spirit of aloha on this island getaway.",
     "cost": "$2,100",
-    "image": "unit-4/images/maui.webp?v=2"
+    "image": "./images/maui.webp?v=2"
   },
   {
     "name": "Rome, Italy",
     "length": "5 days",
     "description": "Walk through history among ancient ruins, stunning architecture, and delicious Italian cuisine.",
     "cost": "$1,500",
-    "image": "unit-4/images/rome.webp?v=2"
+    "image": "./images/rome.webp?v=2"
   }
 ]
