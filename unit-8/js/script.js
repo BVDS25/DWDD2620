@@ -37,13 +37,13 @@ function displayMovieCards() {
 // Create individual movie card
 function createMovieCard(movie) {
     const cardDiv = document.createElement('div');
-    cardDiv.className = 'movie-card group cursor-pointer h-[600px] flex flex-col';
+    cardDiv.className = 'movie-card group cursor-pointer h-full flex flex-col';
     
     cardDiv.innerHTML = `
         <div class="relative overflow-hidden flex-shrink-0">
             <img src="${movie.image_url}" 
                  alt="${movie.title}" 
-                 class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300">
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300"></div>
         </div>
         <div class="p-6 flex flex-col flex-grow">
