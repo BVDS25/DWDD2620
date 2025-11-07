@@ -181,7 +181,17 @@ function setupHamburgerMenu() {
 
 // Toggle mobile navigation menu
 function toggleMobileMenu() {
-    navMenu.classList.toggle('hidden');
+    const isHidden = navMenu.classList.contains('hidden');
+    
+    if (isHidden) {
+        // Show mobile menu in column layout
+        navMenu.classList.remove('hidden');
+        navMenu.classList.add('flex', 'flex-col');
+    } else {
+        // Hide mobile menu
+        navMenu.classList.add('hidden');
+        navMenu.classList.remove('flex', 'flex-col');
+    }
     
     // Animate hamburger icon
     const lines = hamburgerBtn.querySelectorAll('.hamburger-line');
