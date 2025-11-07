@@ -43,7 +43,7 @@ function createMovieCard(movie) {
         <div class="relative overflow-hidden">
             <img src="${movie.image_url}" 
                  alt="${movie.title}" 
-                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                 class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300"></div>
         </div>
         <div class="p-6">
@@ -94,7 +94,9 @@ function createModal(movie) {
                     <div>
                         <img src="${movie.image_url}" 
                              alt="${movie.title}" 
-                             class="w-full h-80 object-cover rounded-lg">
+                             class="w-full h-80 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                             onclick="showImagePath('${movie.image_url}')"
+                             title="Click to view image URL">
                     </div>
                     
                     <!-- Movie Details -->
@@ -104,10 +106,22 @@ function createModal(movie) {
                             <p class="text-gray-600 leading-relaxed">${movie.description}</p>
                         </div>
                         
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <h4 class="font-semibold text-secondary">Release Year</h4>
+                                <h4 class="font-semibold text-secondary">Production Studio</h4>
+                                <p class="text-gray-600">${movie.production_studio}</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Year Released</h4>
                                 <p class="text-gray-600">${movie.year}</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Budget</h4>
+                                <p class="text-gray-600">${movie.budget}</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Box Office</h4>
+                                <p class="text-gray-600">${movie.box_office}</p>
                             </div>
                             <div>
                                 <h4 class="font-semibold text-secondary">Runtime</h4>
@@ -117,10 +131,11 @@ function createModal(movie) {
                                 <h4 class="font-semibold text-secondary">Genre</h4>
                                 <p class="text-gray-600">${movie.genre}</p>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-secondary">Box Office</h4>
-                                <p class="text-gray-600">${movie.box_office}</p>
-                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-2">Primary Actors</h4>
+                            <p class="text-gray-600">${movie.primary_actors}</p>
                         </div>
                     </div>
                 </div>
@@ -206,6 +221,44 @@ window.addEventListener('resize', function() {
         navMenu.classList.add('hidden');
     }
 });
+
+// Show image path when image is clicked
+function showImagePath(imageUrl) {
+    // Create a temporary input to copy the URL
+    const tempInput = document.createElement('input');
+    tempInput.value = imageUrl;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // For mobile devices
+    
+    try {
+        // Copy to clipboard
+        document.execCommand('copy');
+        
+        // Show a temporary notification
+        const notification = document.createElement('div');
+        notification.className = 'fixed top-4 right-4 bg-secondary text-primary px-4 py-2 rounded-md shadow-lg z-50 transition-opacity duration-300';
+        notification.textContent = 'Image URL copied to clipboard!';
+        document.body.appendChild(notification);
+        
+        // Remove notification after 3 seconds
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            setTimeout(() => {
+                if (document.body.contains(notification)) {
+                    document.body.removeChild(notification);
+                }
+            }, 300);
+        }, 3000);
+        
+    } catch (err) {
+        // Fallback: show alert with URL
+        alert('Image URL: ' + imageUrl);
+    }
+    
+    // Remove temporary input
+    document.body.removeChild(tempInput);
+}
 
 // Escape key to close modals
 document.addEventListener('keydown', function(e) {

@@ -7,7 +7,10 @@
     "year": 2010,
     "runtime": "148 minutes",
     "genre": "Sci-Fi/Thriller",
-    "box_office": "$836.8 million"
+    "box_office": "$836.8 million",
+    "production_studio": "Warner Bros. Pictures",
+    "primary_actors": "Leonardo DiCaprio, Marion Cotillard, Tom Hardy, Elliot Page",
+    "budget": "$160 million"
   },
   {
     "id": 2,
@@ -17,7 +20,10 @@
     "year": 2008,
     "runtime": "152 minutes",
     "genre": "Action/Crime",
-    "box_office": "$1.006 billion"
+    "box_office": "$1.006 billion",
+    "production_studio": "Warner Bros. Pictures",
+    "primary_actors": "Christian Bale, Heath Ledger, Aaron Eckhart, Maggie Gyllenhaal",
+    "budget": "$185 million"
   },
   {
     "id": 3,
@@ -27,7 +33,10 @@
     "year": 2014,
     "runtime": "169 minutes",
     "genre": "Sci-Fi/Drama",
-    "box_office": "$677.5 million"
+    "box_office": "$677.5 million",
+    "production_studio": "Paramount Pictures / Warner Bros.",
+    "primary_actors": "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine",
+    "budget": "$165 million"
   },
   {
     "id": 4,
@@ -37,7 +46,10 @@
     "year": 2017,
     "runtime": "106 minutes",
     "genre": "War/History",
-    "box_office": "$526.9 million"
+    "box_office": "$526.9 million",
+    "production_studio": "Warner Bros. Pictures",
+    "primary_actors": "Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles",
+    "budget": "$100 million"
   },
   {
     "id": 5,
@@ -47,7 +59,10 @@
     "year": 2020,
     "runtime": "150 minutes",
     "genre": "Action/Sci-Fi",
-    "box_office": "$365.3 million"
+    "box_office": "$365.3 million",
+    "production_studio": "Warner Bros. Pictures",
+    "primary_actors": "John David Washington, Robert Pattinson, Elizabeth Debicki, Kenneth Branagh",
+    "budget": "$200 million"
   },
   {
     "id": 6,
@@ -57,7 +72,10 @@
     "year": 2006,
     "runtime": "130 minutes",
     "genre": "Mystery/Drama",
-    "box_office": "$109.7 million"
+    "box_office": "$109.7 million",
+    "production_studio": "Warner Bros. Pictures / Touchstone Pictures",
+    "primary_actors": "Christian Bale, Hugh Jackman, Michael Caine, Scarlett Johansson",
+    "budget": "$40 million"
   },
   {
     "id": 7,
@@ -67,7 +85,10 @@
     "year": 2000,
     "runtime": "113 minutes",
     "genre": "Mystery/Thriller",
-    "box_office": "$40.0 million"
+    "box_office": "$40.0 million",
+    "production_studio": "Newmarket Films",
+    "primary_actors": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior",
+    "budget": "$9 million"
   },
   {
     "id": 8,
@@ -77,7 +98,10 @@
     "year": 2005,
     "runtime": "140 minutes",
     "genre": "Action/Adventure",
-    "box_office": "$373.7 million"
+    "box_office": "$373.7 million",
+    "production_studio": "Warner Bros. Pictures",
+    "primary_actors": "Christian Bale, Michael Caine, Liam Neeson, Katie Holmes",
+    "budget": "$150 million"
   },
   {
     "id": 9,
@@ -87,7 +111,10 @@
     "year": 2012,
     "runtime": "164 minutes",
     "genre": "Action/Thriller",
-    "box_office": "$1.085 billion"
+    "box_office": "$1.085 billion",
+    "production_studio": "Warner Bros. Pictures",
+    "primary_actors": "Christian Bale, Tom Hardy, Anne Hathaway, Gary Oldman",
+    "budget": "$250 million"
   },
   {
     "id": 10,
@@ -97,6 +124,9 @@
     "year": 2023,
     "runtime": "180 minutes",
     "genre": "Biography/Drama",
-    "box_office": "$952.0 million"
+    "box_office": "$952.0 million",
+    "production_studio": "Universal Pictures",
+    "primary_actors": "Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr.",
+    "budget": "$100 million"
   }
 ]
