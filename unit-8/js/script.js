@@ -37,20 +37,20 @@ function displayMovieCards() {
 // Create individual movie card
 function createMovieCard(movie) {
     const cardDiv = document.createElement('div');
-    cardDiv.className = 'movie-card group cursor-pointer';
+    cardDiv.className = 'movie-card group cursor-pointer h-[600px] flex flex-col';
     
     cardDiv.innerHTML = `
-        <div class="relative overflow-hidden">
+        <div class="relative overflow-hidden flex-shrink-0">
             <img src="${movie.image_url}" 
                  alt="${movie.title}" 
-                 class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300">
+                 class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300">
             <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300"></div>
         </div>
-        <div class="p-6">
+        <div class="p-6 flex flex-col flex-grow">
             <h3 class="text-xl font-heading font-semibold text-primary mb-2">${movie.title}</h3>
-            <p class="text-gray-600 text-sm mb-4 line-clamp-3">${movie.description}</p>
+            <p class="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow">${movie.description}</p>
             <button onclick="openModal(${movie.id})" 
-                    class="w-full bg-secondary text-primary font-semibold py-2 px-4 rounded-md hover:bg-yellow-400 transition-colors duration-300">
+                    class="w-full bg-secondary text-primary font-semibold py-2 px-4 rounded-md hover:bg-yellow-400 transition-colors duration-300 mt-auto">
                 See More
             </button>
         </div>
