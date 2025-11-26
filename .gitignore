@@ -24,6 +24,9 @@ tailwind.css
 # Exception: Allow unit-8 compiled CSS for deployment
 !unit-8/css/styles.css
 
+# Exception: Allow unit-9 compiled CSS for deployment
+!unit-9/css/styles.css
+
 # Vite generated files
 .vite/
 vite.config.js.timestamp-*
