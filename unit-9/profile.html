@@ -30,8 +30,7 @@
         
         <!-- Navigation Links -->
         <ul id="navMenu" class="hidden small:flex small:space-x-2 absolute small:relative top-full left-0 w-full small:w-auto bg-white small:bg-transparent shadow-md small:shadow-none flex-col small:flex-row p-4 small:p-0">
-          <li><a href="index.html" class="navLink">Welcome</a></li>
-          <li><a href="home.html" class="navLink">Home</a></li>
+          <li><a href="index.html" class="navLink">Home</a></li>
           <li><a href="products.html" class="navLink">Products</a></li>
           <li><a href="order.html" class="navLink">Your Order</a></li>
           <li><a href="profile.html" class="navLink active">Profile</a></li>
@@ -62,19 +61,19 @@
           <form id="profileForm" class="space-y-6">
             <div>
               <label for="fullName" class="block text-grey-700 font-semibold mb-2">Full Name</label>
-              <input type="text" id="fullName" name="fullName" required 
+              <input type="text" id="fullName" name="fullName" required autocomplete="name"
                      class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
             </div>
             
             <div>
               <label for="email" class="block text-grey-700 font-semibold mb-2">Email Address</label>
-              <input type="email" id="email" name="email" required 
+              <input type="email" id="email" name="email" required autocomplete="email"
                      class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
             </div>
             
             <div>
               <label for="phone" class="block text-grey-700 font-semibold mb-2">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required 
+              <input type="tel" id="phone" name="phone" required autocomplete="tel"
                      class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
             </div>
             
