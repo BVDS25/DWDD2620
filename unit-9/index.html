@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClearSkin - Premium skincare products for clear, healthy skin">
+  <meta name="author" content="ClearSkin">
+  <title>Welcome | ClearSkin</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light text-dark font-sans min-h-screen flex flex-col">
+  
+  <!-- Header & Navigation -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="images/logo.svg" alt="ClearSkin Logo" class="w-16 h-16">
+          <span class="text-2xl font-serif font-bold text-primary">ClearSkin</span>
+        </a>
+        
+        <!-- Hamburger Menu Button -->
+        <button id="navToggle" class="small:hidden text-dark focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        
+        <!-- Navigation Links -->
+        <ul id="navMenu" class="hidden small:flex small:space-x-2 absolute small:relative top-full left-0 w-full small:w-auto bg-white small:bg-transparent shadow-md small:shadow-none flex-col small:flex-row p-4 small:p-0">
+          <li><a href="index.html" class="navLink active">Welcome</a></li>
+          <li><a href="home.html" class="navLink">Home</a></li>
+          <li><a href="products.html" class="navLink">Products</a></li>
+          <li><a href="order.html" class="navLink">Your Order</a></li>
+          <li><a href="profile.html" class="navLink">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-accent py-20 px-4">
+      <div class="container mx-auto text-center max-w-3xl">
+        <h1 class="mb-6">Discover Your Natural Glow</h1>
+        <p class="text-xl text-dark/90 mb-8 leading-relaxed">
+          Premium skincare solutions crafted with natural ingredients for clear, radiant skin.
+        </p>
+        <a href="products.html" class="btn-primary">
+          Shop Now
+        </a>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <h2 class="text-xl font-serif font-bold text-primary mb-3">Natural Ingredients</h2>
+            <p class="text-grey-600">
+              Formulated with carefully selected botanicals and vitamins for optimal skin health.
+            </p>
+          </div>
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h2 class="text-xl font-serif font-bold text-secondary mb-3">Proven Results</h2>
+            <p class="text-grey-600">
+              Clinically tested formulas that deliver visible improvements in skin clarity and texture.
+            </p>
+          </div>
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h2 class="text-xl font-serif font-bold text-accent mb-3">Cruelty-Free</h2>
+            <p class="text-grey-600">
+              All products are ethically developed without animal testing and are vegan-friendly.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="bg-grey-100 py-16 px-4">
+      <div class="container mx-auto text-center max-w-2xl">
+        <h2 class="text-3xl font-serif font-bold text-dark mb-4">Ready to Transform Your Skin?</h2>
+        <p class="text-grey-700 mb-8">
+          Join thousands of satisfied customers who have discovered the ClearSkin difference.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="products.html" class="btn-primary">
+            Browse Products
+          </a>
+          <a href="home.html" class="btn-secondary">
+            Read Reviews
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12 px-4">
+    <div class="container mx-auto">
+      <div id="socialIcons"></div>
+      <div id="copyright"></div>
+    </div>
+  </footer>
+  
+  <script src="js/navigation.js"></script>
+  <script type="module">
+    import { renderSocialIcons } from './modules/socialIcons.mjs';
+    import { renderCopyright } from './modules/copyright.mjs';
+    
+    document.querySelector('#socialIcons').appendChild(renderSocialIcons());
+    document.querySelector('#copyright').appendChild(renderCopyright());
+  </script>
+</body>
+</html>

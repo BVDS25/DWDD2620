@@ -1,0 +1,6 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="28" fill="#E8B4A8" stroke="#3D3229" stroke-width="2"/>
+  <path d="M30 10 C40 15, 45 25, 45 35 C45 42, 38 48, 30 48 C22 48, 15 42, 15 35 C15 25, 20 15, 30 10 Z" fill="#FAF7F5" opacity="0.8"/>
+  <circle cx="30" cy="28" r="8" fill="#C4A88A"/>
+  <text x="30" y="35" font-family="Playfair Display, serif" font-size="16" font-weight="bold" fill="#3D3229" text-anchor="middle">CS</text>
+</svg>

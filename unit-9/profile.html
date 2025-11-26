@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage your ClearSkin profile">
+  <meta name="author" content="ClearSkin">
+  <title>Profile | ClearSkin</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light text-dark font-sans min-h-screen flex flex-col">
+  
+  <!-- Header & Navigation -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="images/logo.svg" alt="ClearSkin Logo" class="w-16 h-16">
+          <span class="text-2xl font-serif font-bold text-primary">ClearSkin</span>
+        </a>
+        
+        <!-- Hamburger Menu Button -->
+        <button id="navToggle" class="small:hidden text-dark focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        
+        <!-- Navigation Links -->
+        <ul id="navMenu" class="hidden small:flex small:space-x-2 absolute small:relative top-full left-0 w-full small:w-auto bg-white small:bg-transparent shadow-md small:shadow-none flex-col small:flex-row p-4 small:p-0">
+          <li><a href="index.html" class="navLink">Welcome</a></li>
+          <li><a href="home.html" class="navLink">Home</a></li>
+          <li><a href="products.html" class="navLink">Products</a></li>
+          <li><a href="order.html" class="navLink">Your Order</a></li>
+          <li><a href="profile.html" class="navLink active">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-primary to-accent py-16 px-4">
+      <div class="container mx-auto text-center">
+        <h1 class="mb-4">Your Profile</h1>
+        <p class="text-xl text-dark/90 max-w-2xl mx-auto">
+          Manage your personal information and preferences.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Profile Section -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-2xl">
+        
+        <!-- Create Profile Section (shown when no profile exists) -->
+        <div id="createProfileSection" class="bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-serif font-bold text-primary mb-6">Create Your Profile</h2>
+          <form id="profileForm" class="space-y-6">
+            <div>
+              <label for="fullName" class="block text-grey-700 font-semibold mb-2">Full Name</label>
+              <input type="text" id="fullName" name="fullName" required 
+                     class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-grey-700 font-semibold mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required 
+                     class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-grey-700 font-semibold mb-2">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required 
+                     class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
+            </div>
+            
+            <div>
+              <label for="skinType" class="block text-grey-700 font-semibold mb-2">Skin Type</label>
+              <select id="skinType" name="skinType" required 
+                      class="w-full px-4 py-3 border border-grey-300 rounded-lg focus:outline-none focus:border-primary">
+                <option value="">Select your skin type</option>
+                <option value="Normal">Normal</option>
+                <option value="Dry">Dry</option>
+                <option value="Oily">Oily</option>
+                <option value="Combination">Combination</option>
+                <option value="Sensitive">Sensitive</option>
+              </select>
+            </div>
+            
+            <div>
+              <button type="submit" class="btn-primary w-full text-lg py-4">
+                Create Profile
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- View Profile Section (shown when profile exists) -->
+        <div id="viewProfileSection" class="hidden">
+          <div class="bg-white p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-serif font-bold text-primary mb-6">Profile Information</h2>
+            <div class="space-y-4">
+              <div class="border-b border-grey-200 pb-3">
+                <p class="text-grey-500 text-sm">Full Name</p>
+                <p id="displayName" class="text-lg font-semibold text-dark"></p>
+              </div>
+              <div class="border-b border-grey-200 pb-3">
+                <p class="text-grey-500 text-sm">Email Address</p>
+                <p id="displayEmail" class="text-lg font-semibold text-dark"></p>
+              </div>
+              <div class="border-b border-grey-200 pb-3">
+                <p class="text-grey-500 text-sm">Phone Number</p>
+                <p id="displayPhone" class="text-lg font-semibold text-dark"></p>
+              </div>
+              <div class="pb-3">
+                <p class="text-grey-500 text-sm">Skin Type</p>
+                <p id="displaySkinType" class="text-lg font-semibold text-dark"></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <button id="deleteProfileBtn" class="bg-grey-500 hover:bg-grey-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+              Delete Profile
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12 px-4">
+    <div class="container mx-auto">
+      <div id="socialIcons"></div>
+      <div id="copyright"></div>
+    </div>
+  </footer>
+  
+  <script src="js/navigation.js"></script>
+  <script type="module">
+    import { renderSocialIcons } from './modules/socialIcons.mjs';
+    import { renderCopyright } from './modules/copyright.mjs';
+    
+    document.querySelector('#socialIcons').appendChild(renderSocialIcons());
+    document.querySelector('#copyright').appendChild(renderCopyright());
+    
+    // Profile management functionality
+    const PROFILE_KEY = 'clearSkinProfile';
+    const createSection = document.querySelector('#createProfileSection');
+    const viewSection = document.querySelector('#viewProfileSection');
+    const profileForm = document.querySelector('#profileForm');
+    const deleteBtn = document.querySelector('#deleteProfileBtn');
+    
+    // Check if profile exists and display appropriate section
+    function checkProfile() {
+      const profile = localStorage.getItem(PROFILE_KEY);
+      
+      if (profile) {
+        // Profile exists - show view section
+        const profileData = JSON.parse(profile);
+        displayProfile(profileData);
+        createSection.classList.add('hidden');
+        viewSection.classList.remove('hidden');
+      } else {
+        // No profile - show create section
+        createSection.classList.remove('hidden');
+        viewSection.classList.add('hidden');
+      }
+    }
+    
+    // Display profile data
+    function displayProfile(data) {
+      document.querySelector('#displayName').textContent = data.fullName;
+      document.querySelector('#displayEmail').textContent = data.email;
+      document.querySelector('#displayPhone').textContent = data.phone;
+      document.querySelector('#displaySkinType').textContent = data.skinType;
+    }
+    
+    // Handle form submission - Create Profile
+    const submitButton = document.querySelector('input[type=submit]') || profileForm.querySelector('button[type=submit]');
+    
+    profileForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Validate all fields are filled
+      const fullName = document.querySelector('#fullName').value.trim();
+      const email = document.querySelector('#email').value.trim();
+      const phone = document.querySelector('#phone').value.trim();
+      const skinType = document.querySelector('#skinType').value;
+      
+      if (!fullName || !email || !phone || !skinType) {
+        alert('Please fill in all fields.');
+        return;
+      }
+      
+      // Create profile object
+      const profileData = {
+        fullName,
+        email,
+        phone,
+        skinType
+      };
+      
+      // Save to localStorage
+      localStorage.setItem(PROFILE_KEY, JSON.stringify(profileData));
+      
+      // Display success message and refresh view
+      alert('Profile created successfully!');
+      checkProfile();
+      profileForm.reset();
+    });
+    
+    // Handle profile deletion
+    deleteBtn.addEventListener('click', function() {
+      if (confirm('Are you sure you want to delete your profile? This action cannot be undone.')) {
+        localStorage.removeItem(PROFILE_KEY);
+        alert('Profile deleted successfully.');
+        checkProfile();
+      }
+    });
+    
+    // Initial check on page load
+    checkProfile();
+  </script>
+</body>
+</html>

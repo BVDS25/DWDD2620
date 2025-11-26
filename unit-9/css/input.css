@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* Custom component styles using @apply */
+@layer components {
+  /* Navigation link styling */
+  .navLink {
+    @apply px-4 py-2 text-dark hover:text-primary transition-colors duration-300 font-medium;
+  }
+  
+  /* Active navigation link for wayfinding */
+  .navLink.active {
+    @apply text-primary font-semibold border-b-2 border-primary;
+  }
+  
+  /* Page heading styling */
+  h1 {
+    @apply text-4xl md:text-5xl font-serif font-bold text-dark mb-6;
+  }
+  
+  /* Custom button styles */
+  .btn-primary {
+    @apply bg-primary hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+  }
+  
+  /* Card styling */
+  .product-card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+}

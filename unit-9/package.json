@@ -1,0 +1,17 @@
+{
+  "name": "unit-9-clearskin-ecommerce",
+  "version": "1.0.0",
+  "description": "ClearSkin Skincare E-commerce Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify"
+  },
+  "keywords": ["tailwind", "ecommerce", "skincare", "clearskin"],
+  "author": "Student Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.7",
+    "autoprefixer": "^10.4.16"
+  }
+}

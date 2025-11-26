@@ -1,0 +1,82 @@
+[
+  {
+    "itemNumber": "CS001",
+    "title": "Vitamin C Brightening Serum",
+    "description": "A powerful antioxidant serum that brightens skin tone, reduces dark spots, and promotes a radiant complexion. Infused with 20% pure Vitamin C and hyaluronic acid.",
+    "imageUrl": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80",
+    "size": "30ml",
+    "skinType": "All skin types",
+    "keyIngredients": "Vitamin C, Hyaluronic Acid, Vitamin E",
+    "cost": 48.00
+  },
+  {
+    "itemNumber": "CS002",
+    "title": "Hydrating Facial Cleanser",
+    "description": "Gentle, sulfate-free cleanser that removes impurities while maintaining skin's natural moisture barrier. Perfect for daily use morning and night.",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&q=80",
+    "size": "150ml",
+    "skinType": "Dry to normal skin",
+    "keyIngredients": "Glycerin, Aloe Vera, Chamomile",
+    "cost": 32.00
+  },
+  {
+    "itemNumber": "CS003",
+    "title": "Retinol Night Cream",
+    "description": "Anti-aging night cream with encapsulated retinol to reduce fine lines and wrinkles. Promotes cell turnover for smoother, younger-looking skin.",
+    "imageUrl": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400&q=80",
+    "size": "50ml",
+    "skinType": "Mature skin",
+    "keyIngredients": "Retinol, Peptides, Shea Butter",
+    "cost": 65.00
+  },
+  {
+    "itemNumber": "CS004",
+    "title": "Oil-Free Moisturizer",
+    "description": "Lightweight, non-comedogenic moisturizer that hydrates without clogging pores. Ideal for oily and combination skin types.",
+    "imageUrl": "https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&q=80",
+    "size": "60ml",
+    "skinType": "Oily to combination skin",
+    "keyIngredients": "Niacinamide, Green Tea, Salicylic Acid",
+    "cost": 38.00
+  },
+  {
+    "itemNumber": "CS005",
+    "title": "Exfoliating Face Mask",
+    "description": "Weekly treatment mask with natural clay and fruit enzymes to deeply cleanse pores and reveal brighter, smoother skin.",
+    "imageUrl": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&q=80",
+    "size": "75ml",
+    "skinType": "All skin types",
+    "keyIngredients": "Kaolin Clay, Papaya Enzymes, Jojoba Beads",
+    "cost": 42.00
+  },
+  {
+    "itemNumber": "CS006",
+    "title": "Eye Renewal Cream",
+    "description": "Targeted treatment for the delicate eye area. Reduces puffiness, dark circles, and fine lines with caffeine and peptides.",
+    "imageUrl": "https://images.unsplash.com/photo-1617897903246-719242758050?w=400&q=80",
+    "size": "15ml",
+    "skinType": "All skin types",
+    "keyIngredients": "Caffeine, Peptides, Vitamin K",
+    "cost": 55.00
+  },
+  {
+    "itemNumber": "CS007",
+    "title": "Mineral SPF 50 Sunscreen",
+    "description": "Broad-spectrum mineral sunscreen that protects against UVA/UVB rays. Non-greasy formula suitable for sensitive skin.",
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80",
+    "size": "50ml",
+    "skinType": "Sensitive skin",
+    "keyIngredients": "Zinc Oxide, Titanium Dioxide, Vitamin E",
+    "cost": 35.00
+  },
+  {
+    "itemNumber": "CS008",
+    "title": "Nourishing Face Oil",
+    "description": "Luxurious blend of botanical oils that deeply nourishes and restores skin's natural glow. Perfect for dry or mature skin.",
+    "imageUrl": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&q=80",
+    "size": "30ml",
+    "skinType": "Dry to mature skin",
+    "keyIngredients": "Rosehip Oil, Argan Oil, Squalane",
+    "cost": 58.00
+  }
+]
