@@ -145,87 +145,13 @@
   <script type="module">
     import { renderSocialIcons } from './modules/socialIcons.mjs';
     import { renderCopyright } from './modules/copyright.mjs';
+    import { initializeProfilePage } from './modules/profile.mjs';
     
     document.querySelector('#socialIcons').appendChild(renderSocialIcons());
     document.querySelector('#copyright').appendChild(renderCopyright());
     
-    // Profile management functionality
-    const PROFILE_KEY = 'clearSkinProfile';
-    const createSection = document.querySelector('#createProfileSection');
-    const viewSection = document.querySelector('#viewProfileSection');
-    const profileForm = document.querySelector('#profileForm');
-    const deleteBtn = document.querySelector('#deleteProfileBtn');
-    
-    // Check if profile exists and display appropriate section
-    function checkProfile() {
-      const profile = localStorage.getItem(PROFILE_KEY);
-      
-      if (profile) {
-        // Profile exists - show view section
-        const profileData = JSON.parse(profile);
-        displayProfile(profileData);
-        createSection.classList.add('hidden');
-        viewSection.classList.remove('hidden');
-      } else {
-        // No profile - show create section
-        createSection.classList.remove('hidden');
-        viewSection.classList.add('hidden');
-      }
-    }
-    
-    // Display profile data
-    function displayProfile(data) {
-      document.querySelector('#displayName').textContent = data.fullName;
-      document.querySelector('#displayEmail').textContent = data.email;
-      document.querySelector('#displayPhone').textContent = data.phone;
-      document.querySelector('#displaySkinType').textContent = data.skinType;
-    }
-    
-    // Handle form submission - Create Profile
-    const submitButton = document.querySelector('input[type=submit]') || profileForm.querySelector('button[type=submit]');
-    
-    profileForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      
-      // Validate all fields are filled
-      const fullName = document.querySelector('#fullName').value.trim();
-      const email = document.querySelector('#email').value.trim();
-      const phone = document.querySelector('#phone').value.trim();
-      const skinType = document.querySelector('#skinType').value;
-      
-      if (!fullName || !email || !phone || !skinType) {
-        alert('Please fill in all fields.');
-        return;
-      }
-      
-      // Create profile object
-      const profileData = {
-        fullName,
-        email,
-        phone,
-        skinType
-      };
-      
-      // Save to localStorage
-      localStorage.setItem(PROFILE_KEY, JSON.stringify(profileData));
-      
-      // Display success message and refresh view
-      alert('Profile created successfully!');
-      checkProfile();
-      profileForm.reset();
-    });
-    
-    // Handle profile deletion
-    deleteBtn.addEventListener('click', function() {
-      if (confirm('Are you sure you want to delete your profile? This action cannot be undone.')) {
-        localStorage.removeItem(PROFILE_KEY);
-        alert('Profile deleted successfully.');
-        checkProfile();
-      }
-    });
-    
-    // Initial check on page load
-    checkProfile();
+    // Initialize profile page functionality
+    initializeProfilePage();
   </script>
 </body>
 </html>
