@@ -32,7 +32,7 @@
         <ul id="navMenu" class="hidden small:flex small:space-x-2 absolute small:relative top-full left-0 w-full small:w-auto bg-white small:bg-transparent shadow-md small:shadow-none flex-col small:flex-row p-4 small:p-0">
           <li><a href="index.html" class="navLink">Home</a></li>
           <li><a href="products.html" class="navLink">Products</a></li>
-          <li><a href="order.html" class="navLink">Your Order</a></li>
+          <li><a href="order.html" class="navLink">Your Cart</a></li>
           <li><a href="profile.html" class="navLink active">Profile</a></li>
         </ul>
       </nav>
@@ -142,16 +142,6 @@
   </footer>
   
   <script src="js/navigation.js"></script>
-  <script type="module">
-    import { renderSocialIcons } from './modules/socialIcons.mjs';
-    import { renderCopyright } from './modules/copyright.mjs';
-    import { initializeProfilePage } from './modules/profile.mjs';
-    
-    document.querySelector('#socialIcons').appendChild(renderSocialIcons());
-    document.querySelector('#copyright').appendChild(renderCopyright());
-    
-    // Initialize profile page functionality
-    initializeProfilePage();
-  </script>
+  <script type="module" src="js/profile.js"></script>
 </body>
 </html>

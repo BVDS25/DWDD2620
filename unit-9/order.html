@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="View and manage your ClearSkin order">
   <meta name="author" content="ClearSkin">
-  <title>Your Order | ClearSkin</title>
+  <title>Your Cart | ClearSkin</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -32,7 +32,7 @@
         <ul id="navMenu" class="hidden small:flex small:space-x-2 absolute small:relative top-full left-0 w-full small:w-auto bg-white small:bg-transparent shadow-md small:shadow-none flex-col small:flex-row p-4 small:p-0">
           <li><a href="index.html" class="navLink">Home</a></li>
           <li><a href="products.html" class="navLink">Products</a></li>
-          <li><a href="order.html" class="navLink active">Your Order</a></li>
+          <li><a href="order.html" class="navLink active">Your Cart</a></li>
           <li><a href="profile.html" class="navLink">Profile</a></li>
         </ul>
       </nav>
@@ -44,7 +44,7 @@
     <!-- Page Header -->
     <section class="bg-gradient-to-r from-primary to-accent py-16 px-4">
       <div class="container mx-auto text-center">
-        <h1 class="mb-4">Your Order</h1>
+        <h1 class="mb-4">Your Cart</h1>
         <p class="text-xl text-dark/90 max-w-2xl mx-auto">
           Review your selected items and complete your purchase.
         </p>
@@ -107,16 +107,6 @@
   </footer>
   
   <script src="js/navigation.js"></script>
-  <script type="module">
-    import { renderSocialIcons } from './modules/socialIcons.mjs';
-    import { renderCopyright } from './modules/copyright.mjs';
-    import { initializeCartPage } from './modules/order.mjs';
-    
-    document.querySelector('#socialIcons').appendChild(renderSocialIcons());
-    document.querySelector('#copyright').appendChild(renderCopyright());
-    
-    // Initialize cart page functionality
-    initializeCartPage();
-  </script>
+  <script type="module" src="js/order.js"></script>
 </body>
 </html>
